@@ -1,0 +1,23 @@
+{
+  "version": "0.14",
+  "license": "GPL-3.0-or-later",
+  "upstream": "https://www.gnu.org/software/libredwg/",
+  "release": "https://github.com/LibreDWG/libredwg/releases/tag/0.14",
+  "upstream_archive_sha256": {
+    "libredwg-0.14-win64.zip": "1ad7e15344d20b3426c3435b078d82fb84b35062815946b2cca9c5fc9810fea8",
+    "libredwg-0.14.tar.xz": "62ebb73b984f865960f20ed26619ea5f8789d5e3fd088fa40a2598384da81275"
+  },
+  "binaries": {
+    "windows-amd64": {
+      "libredwg-0.dll": "cc86e25e755ac225eadc839eaa232c2f2233c7a1b60fcd77b2cd1915761aef12",
+      "dwg2dxf.exe": "955f5f2855bc0c5a8bd7a93424ea259ab14405799638b889b2b3c5918c529e3e",
+      "dwgread.exe": "4b4e829cc545b237860f8c1359a80c48bda0e6821ac71727307f58bcdc8459c0",
+      "dwgwrite.exe": "5939d6e8e8ab9e86126de3f26d27762f32142831df2f5a6ef0ca32b3fa5ae932"
+    },
+    "linux-amd64": {
+      "dwg2dxf": "0dcc723766e86a2bd82c89b055b98a2de7c22e92821f96eb0e2cd21185290f88",
+      "dwgread": "2daa78707786a0b21070a917866e40497ccc3c89ba87a40bc76400b90729fb3e",
+      "dwgwrite": "13013e07209a4413173ff1cb0960293901bd069cd38ffc9de59315b650219c0a"
+    }
+  }
+}

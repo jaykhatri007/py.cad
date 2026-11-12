@@ -1,0 +1,23 @@
+PY.cad 16.5.0
+Publisher and maintainer: Jay Kundanlal Khatri, India
+
+Prior project notice retained for continuity:
+Copyright (C) 2026 PyCAD contributors
+
+The publisher reports an independent personal project, with the application code
+and project artwork generated through ChatGPT while he provided instructions
+and testing. No personally written or creatively edited code/artwork is claimed.
+Upstream components are excluded from this description.
+
+To the extent copyright or other licensable rights subsist in original project
+material and are held by the distributor, the application, installer, scripts,
+examples, documentation and included project artwork are offered under the GNU
+General Public License, version 3 only (GPL-3.0-only). See LICENSE. This notice
+does not create copyright, establish exclusive ownership of AI outputs, or claim
+upstream rights. Third-party material retains its notices and licenses; see
+THIRD_PARTY_NOTICES.md and LICENSES.
+
+The display name is PY.cad; legacy PyCAD package, format and storage identifiers
+remain for compatibility. No registered trademark, legal clearance, government
+approval or professional certification is represented. Users' drawings are not
+licensed by this notice. See legal/PUBLISHER.md and legal/TRADEMARKS.md.

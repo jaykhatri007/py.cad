@@ -1,0 +1,3 @@
+-r requirements.txt
+# Optional 3D dependency validated by the v11 audit
+cadquery==2.7.0

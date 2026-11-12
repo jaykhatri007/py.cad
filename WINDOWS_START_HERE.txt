@@ -1,0 +1,63 @@
+PY.cad 16.7.0 — Windows quick start
+
+NATIVE SETUP
+Extract the full ZIP, then double-click Setup-Windows.cmd. It waits for setup
+and keeps the diagnostic result visible. The matching EXE is also available in
+installer/packages/PY.cad-Setup-16.7.0-Windows-x64.exe.
+Run as a normal Windows user. If the verified Microsoft Visual C++ runtime is
+needed, approve its separate Microsoft Windows authorization dialog.
+Installation logs are in %LOCALAPPDATA%\PyCAD\Installation\logs; the visible
+wrapper log is in %LOCALAPPDATA%\PyCAD\logs. Unicode profile paths and deep
+license-notice paths are handled without changing system long-path policy.
+Internet is needed initially. The setup is unsigned and still needs native
+Windows acceptance; see VALIDATION_16_7.txt.
+
+SOURCE-FOLDER LAUNCHER
+
+UPDATING YOUR EXISTING BUILD
+1. Close PY.cad.
+2. Keep start_windows.bat in your extracted PY.cad folder.
+   It must be beside main.py and requirements.txt.
+3. Double-click start_windows.bat.
+
+USING THE COMPLETE ZIP
+1. Right-click PY.cad-v16.7-Full.zip and choose Extract All.
+2. Open the extracted PY.cad folder.
+3. Double-click start_windows.bat. Do not run it from inside the ZIP.
+
+The launcher finds installed 64-bit CPython 3.11, 3.12, 3.13 or 3.14.
+It prefers Python 3.12 when creating an environment. Preview, 32-bit and
+free-threaded builds are not accepted. Python 3.12 is recommended for PY.cad.
+
+If Python is missing, press Y when offered the WinGet installation.
+This installs Python 3.12 for your user and accepts its installer agreements.
+The first launch also downloads PyQt6 and ezdxf. Let setup finish.
+Later launches reuse the local environment without downloading every time.
+
+IF AUTOMATIC INSTALLATION IS UNAVAILABLE
+Install 64-bit Python 3.12 from:
+https://www.python.org/downloads/windows/
+Include pip and the Python launcher. Then run start_windows.bat again.
+If Python Install Manager is already installed, an alternative command is:
+    pymanager install 3.12
+
+CUSTOM PYTHON LOCATION (Command Prompt)
+    set "PYCAD_PYTHON=C:\path\to\python.exe"
+    start_windows.bat
+Use a full interpreter path, without extra command arguments.
+This override is used when creating an environment. A valid .venv is reused.
+
+IF AN ERROR REMAINS
+The window stays open and prints the diagnostic log and its full path.
+Logs normally live in %LOCALAPPDATA%\PyCAD\logs.
+Send the latest startup-*.log with your error report.
+For permissions errors, extract the build into your Documents folder.
+If an old .venv is unusable, the launcher renames it to .venv-backup-*.
+Your drawing files are not moved.
+
+VALIDATION
+The runtime-probe Python code and package contents were checked on Linux.
+The .bat file has not been executed on a real Windows machine in this session.
+A Windows integration test is included for setup, broken-environment recovery,
+paths containing spaces, parentheses and !, and offline restart.
+See docs/WINDOWS_LAUNCHER_FIX.md for technical details.

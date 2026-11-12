@@ -1,0 +1,1061 @@
+{
+  "release": "15.7.0",
+  "update": "Ubuntu setup, isolated Linux runtime, offline restart, desktop checks and portable DXF relinking",
+  "input_archive": "PyCAD-v15-Full.zip",
+  "input_sha256": "9a1147fc4f37ac0c532ecf8af5b6c567d4e1fc4dc1e60d795aeaea42bf7bed51",
+  "input_app_version": "15.6.0",
+  "native_schema": 6,
+  "ribbon_counts": {
+    "available": 69,
+    "limited": 58,
+    "planned": 25
+  },
+  "tests": {
+    "existing_qa": {
+      "passed": 366,
+      "skipped": 2
+    },
+    "fresh_core": {
+      "passed": 360,
+      "skipped": 4
+    },
+    "linux_install_integration": "passed",
+    "xcb_virtual_display": "passed"
+  },
+  "deleted": [],
+  "note": "Complete inventory except this manifest. Source only; no environments. Windows launcher preserved.",
+  "files": [
+    {
+      "file": ".github/workflows/tests.yml",
+      "status": "modified",
+      "bytes": 1886,
+      "sha256": "c7762d5f85213f0e3ff65bfc69523bf7e2a16fe0c6da3601086d598fab395e3a"
+    },
+    {
+      "file": ".gitignore",
+      "status": "modified",
+      "bytes": 138,
+      "sha256": "0cc188f9b5e6462d036c9c7d0281f0efda61669ad74759642b4561aa5de66c96"
+    },
+    {
+      "file": "DEPENDENCIES_AND_LICENSES.md",
+      "status": "unchanged",
+      "bytes": 1228,
+      "sha256": "7523c9f9698e93ded8d10a66d1bde7b898ff90def41dbb8350305628db912f97"
+    },
+    {
+      "file": "README.md",
+      "status": "modified",
+      "bytes": 23556,
+      "sha256": "5c61ded6b8defee00cf22299505720c0df81cd08b4b572d181bace2ba99144bb"
+    },
+    {
+      "file": "UBUNTU_START_HERE.txt",
+      "status": "added",
+      "bytes": 2434,
+      "sha256": "3b3a4f863c3b6cd876615eece972d8ebe5a51972b1e0f94cdc6100db855d2038"
+    },
+    {
+      "file": "UPDATE_15_1.txt",
+      "status": "unchanged",
+      "bytes": 1695,
+      "sha256": "b5e1f4167f7b2667a4b6e4faaa3f64316c224dfda9659e6e289086c4c5cdbc15"
+    },
+    {
+      "file": "UPDATE_15_2.txt",
+      "status": "unchanged",
+      "bytes": 1860,
+      "sha256": "2901342ab9a7c6bcbcb4bd7c34badc274a8abfbf87ae55cdc013515e5c2f0e79"
+    },
+    {
+      "file": "UPDATE_15_3.txt",
+      "status": "unchanged",
+      "bytes": 1680,
+      "sha256": "423a0ad3c68b91e20104a29a4fe86289efa1f7b59e67751fd21f5eb48480f8e0"
+    },
+    {
+      "file": "UPDATE_15_4.txt",
+      "status": "unchanged",
+      "bytes": 1931,
+      "sha256": "bb1a217faab791f5ac1fa9082e69bf7aff0c230a82b1969f11845857be591242"
+    },
+    {
+      "file": "UPDATE_15_5.txt",
+      "status": "unchanged",
+      "bytes": 1830,
+      "sha256": "c55f7b613e33bdce103f99a573338f46dd9d267bc74ae4488d4c0d188e06c6d9"
+    },
+    {
+      "file": "UPDATE_15_6.txt",
+      "status": "unchanged",
+      "bytes": 2151,
+      "sha256": "8471f815c6833dfb2c3e747749fe9a52fd4e2c3cc08fe3828781ea14e8d93a81"
+    },
+    {
+      "file": "UPDATE_15_7.txt",
+      "status": "added",
+      "bytes": 1632,
+      "sha256": "3562e1f02b825126d25373d2c411ac5dd95353eaf49de57997de461592603d62"
+    },
+    {
+      "file": "WINDOWS_START_HERE.txt",
+      "status": "unchanged",
+      "bytes": 2223,
+      "sha256": "ba815339d81e2d8c5fb9d35aa119218eadf04a01fc6b4e5fb0f94aea29b5d212"
+    },
+    {
+      "file": "assets/pycad.svg",
+      "status": "added",
+      "bytes": 385,
+      "sha256": "673e404fd7579fd7754fdf324e8ed096f2b6059a1631e59750b539529e5b2aa5"
+    },
+    {
+      "file": "docs/AUDIT_AND_ROADMAP.md",
+      "status": "unchanged",
+      "bytes": 18055,
+      "sha256": "e17d5987189c3f085ff7806644b20fed375c77e2208ec35533cbcd1e77060523"
+    },
+    {
+      "file": "docs/COMMANDS_15_4.md",
+      "status": "unchanged",
+      "bytes": 7573,
+      "sha256": "dbd68e8ab4ef40cddac6a8f3a1dc65d1fb3a07e2b218b5551c883f70e5ef59ae"
+    },
+    {
+      "file": "docs/GUIDE_15_5.md",
+      "status": "unchanged",
+      "bytes": 10898,
+      "sha256": "17743927bb02dba9e753e523367b16e73212965d9919d5b1cc57a145f37a29a1"
+    },
+    {
+      "file": "docs/GUIDE_15_6.md",
+      "status": "unchanged",
+      "bytes": 10883,
+      "sha256": "28b7ab522c39e7f5eb102988c3a33cf1ebc2507995d2a680d9697216df8131ae"
+    },
+    {
+      "file": "docs/GUIDE_V15.md",
+      "status": "unchanged",
+      "bytes": 10332,
+      "sha256": "4d3702c6c2e4383266005464d58410e47951fa391d5795f0d1bbc8405f1a3d77"
+    },
+    {
+      "file": "docs/RIBBON_CATALOG_15_3.json",
+      "status": "unchanged",
+      "bytes": 32030,
+      "sha256": "7af3888878082f2726f56f742f8d7eeff8da6f25bccf12a798c58fc71f909588"
+    },
+    {
+      "file": "docs/RIBBON_COVERAGE_15_3.md",
+      "status": "unchanged",
+      "bytes": 24199,
+      "sha256": "a501c7ca7734ffe89aa75090024d08dc45edfc7a7386900e31cfac93ca8bca8e"
+    },
+    {
+      "file": "docs/RIBBON_COVERAGE_15_4.md",
+      "status": "unchanged",
+      "bytes": 28538,
+      "sha256": "c9bf8f4b6c870f5795e2f3f83841dcc89d21f31048a857d07258432a820d58c3"
+    },
+    {
+      "file": "docs/RIBBON_COVERAGE_15_5.md",
+      "status": "unchanged",
+      "bytes": 23904,
+      "sha256": "14f6e9e6b67a6722361480c712754dff3e9b8462a7553eaae899dd5ac43617e4"
+    },
+    {
+      "file": "docs/RIBBON_COVERAGE_15_6.md",
+      "status": "unchanged",
+      "bytes": 19637,
+      "sha256": "97719b8ccb052da4882a15a38f0642c2da56a6047a352d8f564fd0c5e3d14a83"
+    },
+    {
+      "file": "docs/RIBBON_COVERAGE_15_7.md",
+      "status": "added",
+      "bytes": 19395,
+      "sha256": "9e70dece5a2864c56d9a6465319a495204bfa046f44ae708c0a7e722ee05b6aa"
+    },
+    {
+      "file": "docs/RIBBON_GUIDE_15_3.md",
+      "status": "unchanged",
+      "bytes": 6682,
+      "sha256": "fe6b4171a322b5b86deaab7957ba9d4bbbd7d40c9faaacd175eb8dc1137f7084"
+    },
+    {
+      "file": "docs/ROADMAP_15_3.md",
+      "status": "unchanged",
+      "bytes": 4116,
+      "sha256": "40d46d5b483977fc82178b12d3bf3cd4c92fded2df314d860574ddc304302e9f"
+    },
+    {
+      "file": "docs/ROADMAP_15_4.md",
+      "status": "unchanged",
+      "bytes": 4810,
+      "sha256": "62e5c76b052d0757dfc41ccadb9b8d51a6675df1a8fb6c1597a01d118c3ff798"
+    },
+    {
+      "file": "docs/ROADMAP_15_6.md",
+      "status": "unchanged",
+      "bytes": 2666,
+      "sha256": "e471b614851c4a3feae705aeddce5f088a0e0f8ce3c188f89b53489b869b739b"
+    },
+    {
+      "file": "docs/ROADMAP_15_7.md",
+      "status": "added",
+      "bytes": 1636,
+      "sha256": "66191b90c34753698c1816efbb4085a3b1187d2f9f0342cecee0fac89e67b1b3"
+    },
+    {
+      "file": "docs/ROADMAP_V12.md",
+      "status": "unchanged",
+      "bytes": 4282,
+      "sha256": "50ba324186237886368678c1b826759ec13541a953f7c1a1074683e1a079bd3d"
+    },
+    {
+      "file": "docs/ROADMAP_V13.md",
+      "status": "unchanged",
+      "bytes": 3591,
+      "sha256": "92ce2b121768fb1858485e2a07f5cc29d51e71f770c150307ff017d8d2d74ce8"
+    },
+    {
+      "file": "docs/ROADMAP_V14.md",
+      "status": "unchanged",
+      "bytes": 4342,
+      "sha256": "96c68b06be25fc702ca36a71aa901c59c414e239eb299d8cf3f14b1f3b7ea3dd"
+    },
+    {
+      "file": "docs/ROADMAP_V15.md",
+      "status": "unchanged",
+      "bytes": 4087,
+      "sha256": "6fa90f73bf1364a600aa418bf9300a2b3c28bac9854a6c899ace1a716dec3585"
+    },
+    {
+      "file": "docs/TEST_RESULTS.txt",
+      "status": "modified",
+      "bytes": 4278,
+      "sha256": "bb29acd6b8386b258aac496269bf1c926936ea0ba6d5dbcfa639f16bb29cdaed"
+    },
+    {
+      "file": "docs/UBUNTU_GUIDE_15_7.md",
+      "status": "added",
+      "bytes": 10722,
+      "sha256": "73f69758381c923a826962b6b6ac061c926a1bab089bda3cf4a5a21c08df9ed9"
+    },
+    {
+      "file": "docs/WINDOWS_LAUNCHER_FIX.md",
+      "status": "unchanged",
+      "bytes": 4157,
+      "sha256": "db55484fd1071c5d12313921b2810c479dd780072f2d8cd549f65af63adae5cb"
+    },
+    {
+      "file": "docs/compact-drafting-v15.2.png",
+      "status": "unchanged",
+      "bytes": 125797,
+      "sha256": "3666b74cffc2490b6cec4868be6375d7841049acd54fc777d29af3d8550470a5"
+    },
+    {
+      "file": "docs/compact-model-v15.2.png",
+      "status": "unchanged",
+      "bytes": 137361,
+      "sha256": "e12a096d7c72f9d906c3d4fad2ad64f2e418684d3363b7563b2854c2ae515a14"
+    },
+    {
+      "file": "docs/constraint-manager-v15.4.png",
+      "status": "unchanged",
+      "bytes": 73959,
+      "sha256": "82460c6ab0afb3c86917a44c10167da6adb714b8572a0036ee8212d51e62c7cf"
+    },
+    {
+      "file": "docs/constraints-compact-v15.4.png",
+      "status": "unchanged",
+      "bytes": 143797,
+      "sha256": "75d952d50577ec07171ec75b5d2af20a73aca1dc43937ddee078f2537db0b197"
+    },
+    {
+      "file": "docs/constraints-v15.4.png",
+      "status": "unchanged",
+      "bytes": 149212,
+      "sha256": "33b37c7c19da2dc23adea17a331e92a479a4856cb2b2a4feb1e24bd8635e7e04"
+    },
+    {
+      "file": "docs/dimension-styles-v15.png",
+      "status": "unchanged",
+      "bytes": 42128,
+      "sha256": "93aebd7c4be1059c3684b1b9edd1c14d61fa7354bab70977221f0c35b49702de"
+    },
+    {
+      "file": "docs/dynamic-input-v15.6.png",
+      "status": "unchanged",
+      "bytes": 142454,
+      "sha256": "eed31a016418ca23d25760d11c2f9e604060e670b812067b44978c11bed3df76"
+    },
+    {
+      "file": "docs/embedded-drafting-v15.1.png",
+      "status": "unchanged",
+      "bytes": 147884,
+      "sha256": "714599627d2e291ced3d1b34349ef2b14ce3724c143b8bba0394abfb00a2731c"
+    },
+    {
+      "file": "docs/embedded-four-views-v15.1.png",
+      "status": "unchanged",
+      "bytes": 141123,
+      "sha256": "db7298adc18b92b5997661e34f62b833ab63100840921eb5846c0f5813ad8f90"
+    },
+    {
+      "file": "docs/embedded-viewport-v15.1.png",
+      "status": "unchanged",
+      "bytes": 145996,
+      "sha256": "ab6a7065288c436d8cc174dc1a740ec2276372272fca2b292d24c33801e23873"
+    },
+    {
+      "file": "docs/file-import-v15.5.png",
+      "status": "unchanged",
+      "bytes": 87665,
+      "sha256": "ffa3fbdf6b6585a3cdf46409756be5869f16d933e5ec4eb30b3125ea9e668de6"
+    },
+    {
+      "file": "docs/file-utilities-v15.5.png",
+      "status": "unchanged",
+      "bytes": 62172,
+      "sha256": "4cc41cf50dff603817f6b50424e78e1566cbf7f3685f5504a0876b6d1a433a51"
+    },
+    {
+      "file": "docs/layer-manager-v15.png",
+      "status": "unchanged",
+      "bytes": 52429,
+      "sha256": "8a29adfdacff41955a24f37e8eee33532f8c6293e2a91aac3a34be8b1b5a76ba"
+    },
+    {
+      "file": "docs/live-measurements-v15.5.png",
+      "status": "unchanged",
+      "bytes": 113460,
+      "sha256": "a6bf4fa8a2a6acae0ee670ec31353c76c2e3e7a740c1a47631b42e14bd844156"
+    },
+    {
+      "file": "docs/model-views-v15.png",
+      "status": "unchanged",
+      "bytes": 95016,
+      "sha256": "b5c3008c73e7f576d558ff5d06bfb01be4f00df01386be46ccac124e1e6d972a"
+    },
+    {
+      "file": "docs/precision-workspace-v15.6.png",
+      "status": "unchanged",
+      "bytes": 136188,
+      "sha256": "944c4c31bb817283f28ad38829863c6242b18a05a057ecf40be1d353bbec7380"
+    },
+    {
+      "file": "docs/ribbon-catalog-15.4.json",
+      "status": "unchanged",
+      "bytes": 34451,
+      "sha256": "7da4665a9d2f11f992d82e99cd13f75b2c94d26c17dc9de27d8128a142978d7e"
+    },
+    {
+      "file": "docs/ribbon-catalog-15.5.json",
+      "status": "unchanged",
+      "bytes": 34477,
+      "sha256": "bc8519d3474c99eae6400ba7bf5680659d103adcdad9faaad72f8f1b951282d9"
+    },
+    {
+      "file": "docs/ribbon-catalog-15.6.json",
+      "status": "unchanged",
+      "bytes": 35154,
+      "sha256": "d947cdf2dac3ae6bc89c8836b3ad66dec0e252ccb0df6790567fc892d6ac35b0"
+    },
+    {
+      "file": "docs/ribbon-catalog-15.7.json",
+      "status": "added",
+      "bytes": 35223,
+      "sha256": "7e70737fd5491638df3932a067c155cf84fa50747ba1c4813a146160bf44eb45"
+    },
+    {
+      "file": "docs/ribbon-compact-v15.3.png",
+      "status": "unchanged",
+      "bytes": 143228,
+      "sha256": "981f3ad3b9a09779e58a0ba1e30dce7dca0a6729bfcf8e561e99d1d0cf6ee5a6"
+    },
+    {
+      "file": "docs/ribbon-home-v15.3.png",
+      "status": "unchanged",
+      "bytes": 153941,
+      "sha256": "c6d31ae822440f8144a40b06a5a3e405bab8c62353c7d92dc7167f14b09fc9ba"
+    },
+    {
+      "file": "docs/ribbon-model-v15.3.png",
+      "status": "unchanged",
+      "bytes": 138361,
+      "sha256": "25735a23cb04b5c89d7bb8d39a9a822c3e6f8d0e0142d0f5369275d85fd96fed"
+    },
+    {
+      "file": "docs/standards-check-v15.4.png",
+      "status": "unchanged",
+      "bytes": 13932,
+      "sha256": "4c2014f3e38d3f2b227b42f9d1a32a836ae8bc20a13a75d400791cc7a9b5a15f"
+    },
+    {
+      "file": "docs/ubuntu-workspace-v15.7.png",
+      "status": "added",
+      "bytes": 143248,
+      "sha256": "520a9da0951719b4e5f21227b5cbde0bef947ed40a8cdd761b97a59491c1b9e0"
+    },
+    {
+      "file": "docs/underlay-manager-v15.6.png",
+      "status": "unchanged",
+      "bytes": 36156,
+      "sha256": "11fe84426c175cb2cd83eaa967bc68819323ca4e440671bba7d6056a5f5f8487"
+    },
+    {
+      "file": "docs/units-conversion-v15.6.png",
+      "status": "unchanged",
+      "bytes": 61661,
+      "sha256": "29196d11cac917ac0419f8126a99ed8aa5be9e0e9dca5ceed6b7ee1218ae2dda"
+    },
+    {
+      "file": "docs/units-manager-v15.5.png",
+      "status": "unchanged",
+      "bytes": 50792,
+      "sha256": "06689b11e494451734270daca8358c292768ede62a112d343fbf6aeb38b4b867"
+    },
+    {
+      "file": "docs/viewport-command-v15.2.png",
+      "status": "unchanged",
+      "bytes": 124720,
+      "sha256": "836686849005882f481a0f9b05d97bbace73e0ec61af99fe7807daec978de41e"
+    },
+    {
+      "file": "docs/workspace-preview-v12.png",
+      "status": "unchanged",
+      "bytes": 152753,
+      "sha256": "af545818761b72913530456de0708ceb34c89ce7e9bf3d89e6e89c48a2ae5d13"
+    },
+    {
+      "file": "docs/workspace-preview-v13.png",
+      "status": "unchanged",
+      "bytes": 153404,
+      "sha256": "499b5b64dc8f02aa08c76c6b7134ed71e59706b8c24d633b509c27e695e6bac6"
+    },
+    {
+      "file": "docs/workspace-preview-v14.png",
+      "status": "unchanged",
+      "bytes": 161000,
+      "sha256": "0fbb3788f6766fa24460bad8b016089c8574806360d64a20ce0090186bf6887e"
+    },
+    {
+      "file": "docs/workspace-preview-v15.png",
+      "status": "unchanged",
+      "bytes": 151446,
+      "sha256": "ca7c81cb4e77718653678689674d7babad4d08c4eb1bca95d16d45280b5c86db"
+    },
+    {
+      "file": "docs/workspace-preview.png",
+      "status": "unchanged",
+      "bytes": 172800,
+      "sha256": "1fd96d94c913537fc47187710d827b6a4d87b1b67d2480bd2b5d680b96427e5a"
+    },
+    {
+      "file": "examples/constrained_sketch.pycad",
+      "status": "unchanged",
+      "bytes": 11946,
+      "sha256": "14f0d39bc2e599f9695356628fbdaa289da65037338b3a4e895a4273f245bf4a"
+    },
+    {
+      "file": "examples/generate_constraints_demo.py",
+      "status": "unchanged",
+      "bytes": 2981,
+      "sha256": "70740201e70e4aafd2008a62882e8dadffbd00a18bddf952c3805148ec7acdfd"
+    },
+    {
+      "file": "examples/generate_demo.py",
+      "status": "unchanged",
+      "bytes": 3914,
+      "sha256": "4ae6b1bc91c612fd2c0e06eab8fecb9e0692815f40675dcd8d8230ac68c002f0"
+    },
+    {
+      "file": "examples/generate_precision_demo.py",
+      "status": "unchanged",
+      "bytes": 3120,
+      "sha256": "9efb6c262544263c05e909290bc866aab6281556f768d87c66b55af54e9b389d"
+    },
+    {
+      "file": "examples/generate_workspace_demo.py",
+      "status": "unchanged",
+      "bytes": 2470,
+      "sha256": "36d0d1fdcb578a23af5fd6764efaeff0eeff4fa4c9d7abaf307ee0c927ef8812"
+    },
+    {
+      "file": "examples/live_measurements.pycad",
+      "status": "unchanged",
+      "bytes": 5346,
+      "sha256": "0b49951e2f859c51c74241150fbc52723b76e0213005de6568d2a755d8cea72e"
+    },
+    {
+      "file": "examples/live_measurements.pycad.bak",
+      "status": "unchanged",
+      "bytes": 5346,
+      "sha256": "1edae52873df7a11ad207b89bc9d5e2e616634010feaa4b3e6db5bf03cf5c707"
+    },
+    {
+      "file": "examples/pavilion_study.pycad",
+      "status": "unchanged",
+      "bytes": 10469,
+      "sha256": "85a09b6c1f7dd0876b1669bf0a5eb1df7a0f20c66a819b86899bc7132689085d"
+    },
+    {
+      "file": "examples/precision_drafting.pycad",
+      "status": "unchanged",
+      "bytes": 31311,
+      "sha256": "45244553e13a4f4973ac50c8ee9c491f26853d7e282f3b9ef3f2ba18a9536b1f"
+    },
+    {
+      "file": "examples/precision_reference.png",
+      "status": "unchanged",
+      "bytes": 17757,
+      "sha256": "8a50e08f45007c1826011215c81285a714b1881f7bbc68a8a945b98ddf3928a6"
+    },
+    {
+      "file": "examples/studio_plan.pdf",
+      "status": "unchanged",
+      "bytes": 15575,
+      "sha256": "488c3c980c510ceff12d61c8c8596a20e9ac32c0a0062febc79966fa3597a3c6"
+    },
+    {
+      "file": "examples/studio_plan.pycad",
+      "status": "unchanged",
+      "bytes": 28562,
+      "sha256": "4528c75b859fa440f38282ef863a2f21cf5703a3108eb197fe1c29bb48bd2fb6"
+    },
+    {
+      "file": "main.py",
+      "status": "modified",
+      "bytes": 1121,
+      "sha256": "174e5b48d19c42409ec984f31b46c18c5e72f442dabd5d3d5e94f48559a4af2e"
+    },
+    {
+      "file": "packaging/pycad.spec",
+      "status": "modified",
+      "bytes": 2035,
+      "sha256": "08dbb7504a50797705c35b9f7c8f6bb53040140e140f296449cf1f67aaaf45f4"
+    },
+    {
+      "file": "pycad/__init__.py",
+      "status": "unchanged",
+      "bytes": 111,
+      "sha256": "b7f3da1e829f9e5b96b66dc838f1294ceb92111190f5a04f377cf6f960f929f6"
+    },
+    {
+      "file": "pycad/_version.py",
+      "status": "modified",
+      "bytes": 23,
+      "sha256": "7db66efce77823298e44b375268c727dd64f904379fcc9c31f5ebdc939fd067b"
+    },
+    {
+      "file": "pycad/applog.py",
+      "status": "modified",
+      "bytes": 2859,
+      "sha256": "147d0440c2ab2be9939fd332de5ea0e81174434b0aa9279b3b9e631c5398079c"
+    },
+    {
+      "file": "pycad/appsettings.py",
+      "status": "modified",
+      "bytes": 2294,
+      "sha256": "e8fe016f842b12817f709184a1e1ddedc3b57bb1d3fa853ceaa61fb566bacd5d"
+    },
+    {
+      "file": "pycad/block_editor.py",
+      "status": "unchanged",
+      "bytes": 7887,
+      "sha256": "3ebe321fa52bc47a89f14a4dd5203601e582d9c4b28bcff1acae64eab3eac2f6"
+    },
+    {
+      "file": "pycad/canvas.py",
+      "status": "unchanged",
+      "bytes": 38920,
+      "sha256": "795181372c3c946148a28a2ed9eca836fef6e521b319b38eeed997d433d42fcd"
+    },
+    {
+      "file": "pycad/command_input.py",
+      "status": "unchanged",
+      "bytes": 4609,
+      "sha256": "f6eaa306f074d3c2300f6adc55ab1dea049dd635d4ca50e78977192281ebe295"
+    },
+    {
+      "file": "pycad/console.py",
+      "status": "unchanged",
+      "bytes": 3245,
+      "sha256": "986a82ed86e6f8a4e4fb7640c58283db46469a3029e6947c2d05322005ea88ee"
+    },
+    {
+      "file": "pycad/constraint_ui.py",
+      "status": "unchanged",
+      "bytes": 14293,
+      "sha256": "6ac0eccb0ca404e2783639606f80f6b442189314f37aa7284bea612433cd2b50"
+    },
+    {
+      "file": "pycad/constraints.py",
+      "status": "unchanged",
+      "bytes": 21599,
+      "sha256": "b637ebf35962ab0163f5149d4b6a506d6d7eb09e910211e4b7fc5339126572c3"
+    },
+    {
+      "file": "pycad/curved_dimensions.py",
+      "status": "unchanged",
+      "bytes": 5616,
+      "sha256": "c03e19a55ecb0d5dee7e676e21d4cd6c286132c2278b0a35d4d0fe25d2fa12f9"
+    },
+    {
+      "file": "pycad/dimstyles.py",
+      "status": "unchanged",
+      "bytes": 6645,
+      "sha256": "36177494b9174013434b2531a15b68736339417f8aed9f8b0c4856cc1fdd6cb1"
+    },
+    {
+      "file": "pycad/document.py",
+      "status": "modified",
+      "bytes": 22975,
+      "sha256": "9f3e204923d762e14f6a324a7cfb8b4ec3d0144fcf4874754099c4d7959342f8"
+    },
+    {
+      "file": "pycad/drafting_extras.py",
+      "status": "unchanged",
+      "bytes": 20504,
+      "sha256": "5a5459b33c53095aef55e03619710ff9802bc06302859da56046ea9a3e9d943f"
+    },
+    {
+      "file": "pycad/dxf_io.py",
+      "status": "unchanged",
+      "bytes": 26945,
+      "sha256": "2eebfb11537cdcd76c30f61925386b28e8c43c2bfdf0247045d3d87468724696"
+    },
+    {
+      "file": "pycad/dynamic_input.py",
+      "status": "unchanged",
+      "bytes": 11134,
+      "sha256": "0fe72eab05b7a3414950ff803703207e86245bde2ac4451f5e59227d905c64f4"
+    },
+    {
+      "file": "pycad/extrude3d.py",
+      "status": "unchanged",
+      "bytes": 2757,
+      "sha256": "77b6bda2532d3fae41519a91225bf5a727029691e74169f8b387cd30f3bff311"
+    },
+    {
+      "file": "pycad/file_workspace.py",
+      "status": "unchanged",
+      "bytes": 20907,
+      "sha256": "83a97c82460c33cd1aff6c1a5f0a44788bb9954ee93433f092b67ca4f042e835"
+    },
+    {
+      "file": "pycad/geom_ops.py",
+      "status": "unchanged",
+      "bytes": 24207,
+      "sha256": "fe0aa480ce3987d57fde50ac9f848abb469e434d63bcfc70e37afe9b69fe8f28"
+    },
+    {
+      "file": "pycad/geometry.py",
+      "status": "unchanged",
+      "bytes": 36233,
+      "sha256": "d97ceb11bd36806ec18c910bf9ff69653699247864260fe25ac3849116b4ab5d"
+    },
+    {
+      "file": "pycad/gl_canvas.py",
+      "status": "unchanged",
+      "bytes": 1609,
+      "sha256": "d283429d1fa52f64407142831316dd47127d416b2f2a4366a5f05a447c6b9504"
+    },
+    {
+      "file": "pycad/layers.py",
+      "status": "unchanged",
+      "bytes": 1771,
+      "sha256": "11843e514e714a09c120f9dc49b3d6ea89e04021ec2419738b982f6d284a780f"
+    },
+    {
+      "file": "pycad/layout.py",
+      "status": "unchanged",
+      "bytes": 3893,
+      "sha256": "95cf348a72059e17c872711d93f664182a369ff6275813d040a822e285e4447d"
+    },
+    {
+      "file": "pycad/main_window.py",
+      "status": "unchanged",
+      "bytes": 70705,
+      "sha256": "11d389c7f680c7f3c89e04d49e4b8ae31982ec555231ef8fc07f0eaee542629b"
+    },
+    {
+      "file": "pycad/managers.py",
+      "status": "unchanged",
+      "bytes": 16465,
+      "sha256": "23c89b5f8401fd9c2840ffd330b0bf7cfa9b8d781abaf274b853ace39e426a49"
+    },
+    {
+      "file": "pycad/measurements.py",
+      "status": "unchanged",
+      "bytes": 13117,
+      "sha256": "11aae05ee8c5f1fa75ec4f12fbccac801e95d4b4d1435fa729a3a9cafb9bb673"
+    },
+    {
+      "file": "pycad/model3d.py",
+      "status": "unchanged",
+      "bytes": 9218,
+      "sha256": "4bb4c5cc3dc1e52561ed0c536f63b3b4e41a9b999d55dc1cc6d8d1f9f9f4e85c"
+    },
+    {
+      "file": "pycad/native_io.py",
+      "status": "unchanged",
+      "bytes": 12105,
+      "sha256": "39b08b3d8e083819516f6b1d128960f47da4e7c7d115141e995cda2eb203d02e"
+    },
+    {
+      "file": "pycad/navigation.py",
+      "status": "unchanged",
+      "bytes": 10606,
+      "sha256": "bca2dfb4a09235d1880b380f611bc6b4480b2fbef37d9c9710beacadb32eaf5d"
+    },
+    {
+      "file": "pycad/plotting.py",
+      "status": "unchanged",
+      "bytes": 4491,
+      "sha256": "70c4be1ae4b3d17df370534e1a85b13bbc5f06ac9510fa1c73865a49bbffac48"
+    },
+    {
+      "file": "pycad/precision_tools.py",
+      "status": "unchanged",
+      "bytes": 6987,
+      "sha256": "eb0cab2f75653c85cf35ad8db169e80272ed46aea7645c3cfa6c4ede0c3e3ca6"
+    },
+    {
+      "file": "pycad/project_tools.py",
+      "status": "unchanged",
+      "bytes": 12644,
+      "sha256": "629680dacd173cbbe385ad3e0bfbd96b09c100ddb4dc691b7337c9c2eb556d91"
+    },
+    {
+      "file": "pycad/ribbon.py",
+      "status": "unchanged",
+      "bytes": 9466,
+      "sha256": "b44ee122cd4fe9e1a26b75a0320b276f824af110451e3e89e6e962780f3ec51a"
+    },
+    {
+      "file": "pycad/ribbon_actions.py",
+      "status": "modified",
+      "bytes": 23393,
+      "sha256": "db1b67310edf2040328291f842521737262703787204cf2b7d75aaa7b190c62e"
+    },
+    {
+      "file": "pycad/ribbon_catalog.py",
+      "status": "modified",
+      "bytes": 22686,
+      "sha256": "86632f7847e5158230ca920ffd85655121195c8bca6f4a8476380c2d08a41796"
+    },
+    {
+      "file": "pycad/scripting.py",
+      "status": "unchanged",
+      "bytes": 3758,
+      "sha256": "66bc2a0df01450df0087c63bd2eafe6fa6d0171816ffb1ba058c94e8df5e4ea3"
+    },
+    {
+      "file": "pycad/spatial_index.py",
+      "status": "unchanged",
+      "bytes": 2998,
+      "sha256": "467b459508768f14b4cd75e36a9a598543b566c80cfb3602fe3e2cf7122145c7"
+    },
+    {
+      "file": "pycad/table_commands.py",
+      "status": "unchanged",
+      "bytes": 2851,
+      "sha256": "041efd36292669a75638691a906057d9e2ac31d509c03430cc0638f0c6866a98"
+    },
+    {
+      "file": "pycad/tolerance.py",
+      "status": "unchanged",
+      "bytes": 1240,
+      "sha256": "e0b4f6ab93beb80dc21dc3f23c2960f7ff07b93494c8c516007aac371f311a60"
+    },
+    {
+      "file": "pycad/tools.py",
+      "status": "unchanged",
+      "bytes": 103614,
+      "sha256": "68942017781344b62d6085d102a8fc094d8a6499f0a12f9672e9419123c516ee"
+    },
+    {
+      "file": "pycad/underlays.py",
+      "status": "unchanged",
+      "bytes": 17166,
+      "sha256": "1eeb3a54d6da7387039fd030868b46ed9df2123743e21a4adf73fdc66c715fe7"
+    },
+    {
+      "file": "pycad/unit_conversion.py",
+      "status": "unchanged",
+      "bytes": 6352,
+      "sha256": "729c344526cd292821145f96a18cdb80adee97d0a96d092d64aa617f63c129af"
+    },
+    {
+      "file": "pycad/units.py",
+      "status": "unchanged",
+      "bytes": 11782,
+      "sha256": "27b437abcea28a6715f0b9f2bed1f3b628cd6d32125bd01dfa7c2e196b4f7154"
+    },
+    {
+      "file": "pycad/validation.py",
+      "status": "unchanged",
+      "bytes": 14138,
+      "sha256": "f590ec1eae9afa56d687f29dee223b5e839de8c3d35b77dd1123132c3d2a5f52"
+    },
+    {
+      "file": "pycad/view3d.py",
+      "status": "unchanged",
+      "bytes": 20316,
+      "sha256": "e530ba83007a4d540fd2d63c11bdb3181a1bc32c61e4f96dce16cc00be0b32cb"
+    },
+    {
+      "file": "pycad/workspace_ui.py",
+      "status": "unchanged",
+      "bytes": 16346,
+      "sha256": "557223799619ad68e1c66ab44882d9bc877e02f081cb07ebe811f693774609ea"
+    },
+    {
+      "file": "pycad/xref.py",
+      "status": "modified",
+      "bytes": 1431,
+      "sha256": "57e3fb5b29bf74ffda35dbf8d8a648a35686884a492ed37d15f5f836d0e58df3"
+    },
+    {
+      "file": "pytest.ini",
+      "status": "unchanged",
+      "bytes": 65,
+      "sha256": "950b48ca1fb5d57158cf5da5354faa36f09be2e805cee1a704f5d30ab53ea95e"
+    },
+    {
+      "file": "requirements-3d.txt",
+      "status": "unchanged",
+      "bytes": 88,
+      "sha256": "be2450798e1e61e97911fad826c5a0c62373ebe6a13ecd0bfc5bae7a752266be"
+    },
+    {
+      "file": "requirements-dev.txt",
+      "status": "unchanged",
+      "bytes": 79,
+      "sha256": "414377feb6085e9c80d37b05bf8d55cbfd4a6d7b8376c1e27cc4d75798b6a5ea"
+    },
+    {
+      "file": "requirements-tested.txt",
+      "status": "unchanged",
+      "bytes": 113,
+      "sha256": "194acead0d1b616b6bd516f62e26c6491736927f252c4bd84f1f44e3977a3c55"
+    },
+    {
+      "file": "requirements.txt",
+      "status": "unchanged",
+      "bytes": 43,
+      "sha256": "635d5e3a04abcc26340095131e69cce1a9a9904fad1054c0b057102dc69fda4e"
+    },
+    {
+      "file": "scripts/check_desktop.py",
+      "status": "added",
+      "bytes": 2299,
+      "sha256": "5fb472be245b034dfebc14f72326254d0d9d41995cecf9fd57e10191fcfcb8e6"
+    },
+    {
+      "file": "scripts/linux_launcher.py",
+      "status": "added",
+      "bytes": 12977,
+      "sha256": "dfadf2a5e416ea93e58e1370884882b39c4cfc61b0a2f879c08144eefaa4f320"
+    },
+    {
+      "file": "setup_ubuntu.sh",
+      "status": "added",
+      "bytes": 2842,
+      "sha256": "c75d8922a7cb2d3ec600d3749ee39bad8ced45bbceaa36716870e9e2a40143cb"
+    },
+    {
+      "file": "start.sh",
+      "status": "modified",
+      "bytes": 1083,
+      "sha256": "7f76ed11c837faf672fa3fabfa9c3ac26365b57c16379aedeb299938b4e7fc0c"
+    },
+    {
+      "file": "start_windows.bat",
+      "status": "unchanged",
+      "bytes": 8178,
+      "sha256": "352342324f646142582f50133705cdfc0bafbde54a645b2bdf7be852961876ba"
+    },
+    {
+      "file": "tests/conftest.py",
+      "status": "unchanged",
+      "bytes": 1318,
+      "sha256": "5ec1872ec90cb65bd5427f60ec5b01c378312636ab675a95a9d5237431e2d01e"
+    },
+    {
+      "file": "tests/test_block_editor.py",
+      "status": "unchanged",
+      "bytes": 3159,
+      "sha256": "6dfc5f2e5273db64ecea88e0e7fd2431aad2cfe52773be524f6d01d83282b3b6"
+    },
+    {
+      "file": "tests/test_command_workspace.py",
+      "status": "unchanged",
+      "bytes": 7508,
+      "sha256": "281cf4b9b9c22cc146a2778413f913049a929ebac8dda27699db64c7cd74f498"
+    },
+    {
+      "file": "tests/test_constraints.py",
+      "status": "unchanged",
+      "bytes": 10889,
+      "sha256": "f787d624110dce6d6bd6f2f6f90e6fca7466c3ee60de811b438b6286f17e1ae2"
+    },
+    {
+      "file": "tests/test_document.py",
+      "status": "unchanged",
+      "bytes": 2822,
+      "sha256": "6cef886e1afbbeb86bfb8530c322d01248cf8a423aee465707add98a31f8607e"
+    },
+    {
+      "file": "tests/test_dwg_support.py",
+      "status": "unchanged",
+      "bytes": 2783,
+      "sha256": "ed103c920b710696a1cdef62458b09d39dcfe2c1d2f7c4df16cdc886e2384b6c"
+    },
+    {
+      "file": "tests/test_dxf_io.py",
+      "status": "unchanged",
+      "bytes": 5225,
+      "sha256": "386cf3e2e0a59aeac0a0c1d0f79e09256c4b0350978efa61b48307d551bd6423"
+    },
+    {
+      "file": "tests/test_embedded_viewports.py",
+      "status": "unchanged",
+      "bytes": 9977,
+      "sha256": "bee4eecbc78227d5b056cc285f806eb9e36d67a8ebdd4311e1a3ec16c83baa70"
+    },
+    {
+      "file": "tests/test_extrude3d.py",
+      "status": "unchanged",
+      "bytes": 1413,
+      "sha256": "ee1b1edd4581df55f9bfb076a5aeb723837f6b8398d2e3a9d1328ca129d7e4f5"
+    },
+    {
+      "file": "tests/test_file_workspace.py",
+      "status": "unchanged",
+      "bytes": 7287,
+      "sha256": "48e1be2341a9e23b665aa377152e0e02a0386e7f4884098ef7b03e83dab181a4"
+    },
+    {
+      "file": "tests/test_geom_ops.py",
+      "status": "unchanged",
+      "bytes": 2904,
+      "sha256": "b8d87d6dcedb17e597dd160fe6124587da72d9110e2f9d57920fc0d93be6e670"
+    },
+    {
+      "file": "tests/test_geometry.py",
+      "status": "unchanged",
+      "bytes": 4458,
+      "sha256": "1a316781d6b39e8cb5e8600d03225a1903d374b75d74883f879e922cac6e8ea6"
+    },
+    {
+      "file": "tests/test_gl_canvas.py",
+      "status": "unchanged",
+      "bytes": 3341,
+      "sha256": "40624408b748464470826bc121d157572d31d3273f956c1e426fefeef4ec5b15"
+    },
+    {
+      "file": "tests/test_grips.py",
+      "status": "unchanged",
+      "bytes": 3957,
+      "sha256": "a9a9c13f5a8ddea1a4307e8dec2f396d056101b9f5e5831f28c2af25f67b86e8"
+    },
+    {
+      "file": "tests/test_hatch_boundary.py",
+      "status": "unchanged",
+      "bytes": 4062,
+      "sha256": "b53beab35e57f8104b4a61b1a12b50dca64137e9f141fa706e4553a86b3b9d66"
+    },
+    {
+      "file": "tests/test_layout.py",
+      "status": "unchanged",
+      "bytes": 1220,
+      "sha256": "a67d62c6e7a5980ad690c607cfdd561356008e40a8f66220b72f99a22816235d"
+    },
+    {
+      "file": "tests/test_linux_launcher.py",
+      "status": "added",
+      "bytes": 2360,
+      "sha256": "5ccd88dab880aa957e27892be5bf901e3108cfafee41f47f56f21d9a9d1bf40e"
+    },
+    {
+      "file": "tests/test_live_measurements.py",
+      "status": "unchanged",
+      "bytes": 12112,
+      "sha256": "6a1313ff0eb7c6c70da43f672b462c61beb13247cf7c59ea6377adfeceb13e03"
+    },
+    {
+      "file": "tests/test_precision_15_6.py",
+      "status": "unchanged",
+      "bytes": 13671,
+      "sha256": "874230e5785154e91d1fb327776250b1d63bd19ab03618f067ed88876138b9ff"
+    },
+    {
+      "file": "tests/test_project_tools.py",
+      "status": "unchanged",
+      "bytes": 5591,
+      "sha256": "114488a31c473138d2f22c90d8ebbafd2f8beaac34dc4d3f727f26b075c2c9b3"
+    },
+    {
+      "file": "tests/test_regressions_v11.py",
+      "status": "unchanged",
+      "bytes": 13141,
+      "sha256": "e4e0ed34619e170bf8fcbd4820f06f889b944c83d24f55e418c5e6d79757389e"
+    },
+    {
+      "file": "tests/test_ribbon_reference.py",
+      "status": "unchanged",
+      "bytes": 15160,
+      "sha256": "8431eb0b885fba8d16329b2565947d36c89d2a5a40a03deaa79e9fe0194d6705"
+    },
+    {
+      "file": "tests/test_tools.py",
+      "status": "unchanged",
+      "bytes": 15810,
+      "sha256": "5aa91171901abf64bd405650e2a66f35822131e830c47fbcbd82f4b94cc8baf5"
+    },
+    {
+      "file": "tests/test_ubuntu_migration.py",
+      "status": "added",
+      "bytes": 7398,
+      "sha256": "84a498b87060f1920b36f1200d9918405c0682997631db768d03226f7dd375a0"
+    },
+    {
+      "file": "tests/test_underlays.py",
+      "status": "unchanged",
+      "bytes": 8811,
+      "sha256": "e02c467846956d6f5bec8bfff935e0807b34fa51ab9f5cd8a1eccf28efab42c8"
+    },
+    {
+      "file": "tests/test_v12_precision.py",
+      "status": "unchanged",
+      "bytes": 3376,
+      "sha256": "ba46a0f548cf6abfd1e12664433aa6e5d1650c3e10b7f8ee514918c3a3dd7ae8"
+    },
+    {
+      "file": "tests/test_v13_geometry.py",
+      "status": "unchanged",
+      "bytes": 3265,
+      "sha256": "72078d622b237cd3fd752cfd05014ceccdba9f143e58faf95d300bfafcbf8a5b"
+    },
+    {
+      "file": "tests/test_v14_precision_core.py",
+      "status": "unchanged",
+      "bytes": 2327,
+      "sha256": "f2f910f61cffcf6ca6987ae0a4f6f2994b22febbc1ce4b7d265684c3d62e1a80"
+    },
+    {
+      "file": "tests/test_v15_workspace.py",
+      "status": "unchanged",
+      "bytes": 14553,
+      "sha256": "e0fd69a60ee20eea3030ef02ffae3f3a89203be1e23ada488e6dd2b47e9eb3b4"
+    },
+    {
+      "file": "tests/test_windows_launcher.py",
+      "status": "unchanged",
+      "bytes": 3564,
+      "sha256": "7c603165b6b8068b9c3d219b6438c9a4ecf533fb37b3bc83addd2cc86a9c1022"
+    }
+  ]
+}

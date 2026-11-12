@@ -1,0 +1,9 @@
+test_engine_identity_and_diagnose (__main__.Checks.test_engine_identity_and_diagnose) ... ok
+test_gtk_css_and_animated_asset_decode (__main__.Checks.test_gtk_css_and_animated_asset_decode) ... ok
+test_headless_preview_does_not_install (__main__.Checks.test_headless_preview_does_not_install) ... ok
+test_progress_completion_failure_cancel (__main__.Checks.test_progress_completion_failure_cancel) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 2.868s
+
+OK

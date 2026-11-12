@@ -1,0 +1,11 @@
+test_cancel_leaves_installation_untouched (__main__.GraphicalUninstall.test_cancel_leaves_installation_untouched) ... ok
+test_confirmation_calls_verified_removal_and_shows_result (__main__.GraphicalUninstall.test_confirmation_calls_verified_removal_and_shows_result) ... ok
+test_desktop_entry_has_no_terminal (__main__.GraphicalUninstall.test_desktop_entry_has_no_terminal) ... ok
+test_headless_failure_never_removes (__main__.GraphicalUninstall.test_headless_failure_never_removes) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.004s
+
+OK
+ok  	pycad/setup	14.772s
+All four target binaries contain the same Studio banner, animation and verified CAD payload. Windows GUI subsystem, macOS universal slices and executable uninstall companion passed.

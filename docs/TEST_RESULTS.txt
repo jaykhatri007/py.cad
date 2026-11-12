@@ -1,0 +1,70 @@
+PyCAD 15.7.0 — Ubuntu migration verification, 2026-10-03 UTC
+
+Test host: Ubuntu 24.04.3 LTS x86_64, Python 3.12.14.
+Target: Ubuntu 26.04 LTS (Resolute Raccoon). Official Ubuntu package listings
+provide Python 3.14/python3.14-venv and the required XCB runtime packages.
+PyQt6 6.11.0, Qt API 6.11.0, Qt runtime 6.11.2, ezdxf 1.4.4.
+
+1. Existing QA environment (NumPy 2.3.5, optional CadQuery 2.7.0 installed):
+   QT_QPA_PLATFORM=offscreen python -m pytest -q --disable-warnings --maxfail=1
+   366 passed, 2 skipped in 16.71s.
+   Skipped: Windows cmd.exe launcher and opt-in Linux installation test.
+   Optional solid-generation tests ran in this environment.
+
+2. Fresh Linux launcher environment (NumPy 2.5.3, CadQuery not installed):
+   Installed core requirements, then requirements-dev.txt to run verification.
+   QT_QPA_PLATFORM=offscreen .venv-linux/bin/python -m pytest -q --disable-warnings --maxfail=1
+   360 passed, 4 skipped in 14.27s.
+   Skips: Windows launcher, opt-in installer, CadQuery test module and a solid-export case.
+   This second run checks the newer NumPy resolved by a fresh Ubuntu installation.
+
+3. Explicit clean Linux installation integration:
+   PYCAD_RUN_LINUX_INSTALL_TEST=1 QT_QPA_PLATFORM=offscreen python -m pytest -q tests/test_linux_launcher.py
+   1 passed in 9.61s.
+   Created an isolated environment in a path with spaces, punctuation and Unicode;
+   preserved a broken Linux environment as a backup and left Windows .venv untouched;
+   reran offline with PIP_NO_INDEX=1; checked unchanged package marker and the correct
+   absolute drawing argument resolved from the caller's directory. Diagnostics passed.
+
+4. Actual Qt desktop path:
+   Installed the Ubuntu libraries from setup_ubuntu.sh plus Xvfb/xauth test tools.
+   Ran bash setup_ubuntu.sh --system-only --yes successfully.
+   PIP_NO_INDEX=1 xvfb-run -a bash start.sh --xcb --check
+   Passed real window startup, native save/reopen, PDF loading, embedded four-view
+   workspace and orbit; created an OpenGL context. Existing environment reused
+   without package download. The check uses a temporary isolated profile.
+   Xvfb is a virtual X11 display, not a physical GPU or complete GNOME session.
+   The initial sandboxed X11 connection was blocked; the authorized local-display
+   run outside that sandbox passed. This was not a missing Qt library problem.
+
+5. Migration-specific cases:
+   10 passed: Windows relative path separators and portable transmittal reload;
+   explicit relink for drive-letter paths; source-scale preservation, single Undo,
+   native reopen; invalid source atomicity; real XREF-manager relink action;
+   unsaved absolute reference path; isolated settings/recovery/log location;
+   desktop entry with special characters and unrelated-file protection; backend
+   precedence; no-display error without attempting installation.
+
+6. Static and visual checks:
+   ruff E9/F821/F822/F823 passed across app, scripts, tests and main.py.
+   New scripts/tests passed ruff F/E9. compileall passed.
+   bash -n passed for start.sh and setup_ubuntu.sh.
+   desktop-file-validate passed for the generated Applications entry.
+   docs/ubuntu-workspace-v15.7.png was captured from the real xcb window and reviewed.
+   An initial screenshot harness needed explicit widget targets because Xvfb has
+   no window manager; the application check itself was unaffected.
+
+7. Package validation:
+   ZIP CRC checks passed. The complete changed-files overlay on exact 15.6 source
+   reproduces the full 15.7 archive byte-for-byte. No prior release files deleted.
+   Environments, caches, setup locks, logs and crash dumps excluded.
+   Fresh extraction checked for version, native schema, required Ubuntu scripts,
+   app icon, command catalog and real main.py startup in a temporary profile.
+
+Native schema remains 6; 15.6 and 15.7 are compatible within implemented features.
+Windows start_windows.bat and core dependency requirements are unchanged.
+New GitHub Actions Ubuntu launcher job is configured; remote CI was not invoked.
+
+Not validated: a native Ubuntu 26.04 desktop run, native Wayland, ARM, hardware GPU/driver performance,
+physical printers, ODA File Converter, a packaged installer, or Windows execution.
+Existing CAD/format limitations remain; no full AutoCAD-parity claim.

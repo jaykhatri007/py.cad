@@ -1,0 +1,9 @@
+test_application_survives_terminal_hangup (test_linux_detached.DetachedLaunchTest.test_application_survives_terminal_hangup) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.081s
+
+OK
+Applications shortcut: /tmp/tmpz04rl6gm/xdg/applications/pycad-local.desktop
+ok  	pycad/setup	15.080s
+All four target binaries contain the same Studio banner, animation and verified CAD payload. Windows GUI subsystem, macOS universal slices and executable uninstall companion passed.

@@ -1,0 +1,53 @@
+{
+  "review_date": "2026-10-18",
+  "files": [
+    {
+      "file": "uv-0.9.26-LICENSE-MIT.txt",
+      "url": "https://raw.githubusercontent.com/astral-sh/uv/0.9.26/LICENSE-MIT",
+      "sha256": "860e3d7a86b84e6a7012c7a635fc64df475cebc6cce34dfeb73a5982ec58176c",
+      "size": 1077
+    },
+    {
+      "file": "uv-0.9.26-LICENSE-APACHE.txt",
+      "url": "https://raw.githubusercontent.com/astral-sh/uv/0.9.26/LICENSE-APACHE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "size": 11357
+    },
+    {
+      "file": "CPython-3.12.12-LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/python/cpython/v3.12.12/LICENSE",
+      "sha256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf",
+      "size": 13936
+    },
+    {
+      "file": "IfcOpenShell-0.9.0-COPYING.txt",
+      "url": "https://raw.githubusercontent.com/IfcOpenShell/IfcOpenShell/v0.9.0/COPYING",
+      "sha256": "1b3782ccad7b8614100cda30d3faf42fc39f2e97932908c543005053b654ca68",
+      "size": 32473
+    },
+    {
+      "file": "IfcOpenShell-0.9.0-COPYING.LESSER.txt",
+      "url": "https://raw.githubusercontent.com/IfcOpenShell/IfcOpenShell/v0.9.0/COPYING.LESSER",
+      "sha256": "e3a994d82e644b03a792a930f574002658412f62407f5fee083f2555c5f23118",
+      "size": 7652
+    },
+    {
+      "file": "IfcOpenShell-0.9.0-source-header.txt",
+      "url": "https://raw.githubusercontent.com/IfcOpenShell/IfcOpenShell/v0.9.0/src/ifcopenshell-python/ifcopenshell/__init__.py",
+      "sha256": "34311c39680ef164f1c39c159778c6d754a879228df289e38fb0f9037e9ef7a2",
+      "size": 17367
+    },
+    {
+      "file": "OCCT-7.8.1-LGPL-2.1.txt",
+      "url": "https://raw.githubusercontent.com/Open-Cascade-SAS/OCCT/V7_8_1/LICENSE_LGPL_21.txt",
+      "sha256": "e237fa56668030e928551ddd60f05df5fe957f75eab874bbd017e085ed722e7c",
+      "size": 26434
+    },
+    {
+      "file": "OCCT-7.8.1-exception.txt",
+      "url": "https://raw.githubusercontent.com/Open-Cascade-SAS/OCCT/V7_8_1/OCCT_LGPL_EXCEPTION.txt",
+      "sha256": "04580a884ea6cea294402649ff7b5cbb167d47462d1340a4ed33e550db10a81b",
+      "size": 663
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+# Shared pinned core for manual/source starts and native setup.
+-r requirements-install-core.txt

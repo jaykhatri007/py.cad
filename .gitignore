@@ -1,0 +1,12 @@
+.venv/
+.venv-linux/
+.venv-linux-backup-*/
+.pycad-linux-setup.lock
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+build/
+dist/
+*.log
+core
+core.*

@@ -1,0 +1,8 @@
+# Shared pinned core: managed setup uses Python 3.12; Linux source startup supports CPython 3.11–3.14.
+-c requirements-install-constraints.txt
+PyQt6==6.11.0
+PyQt6-Qt6==6.11.2
+ezdxf==1.4.4
+numpy==2.3.5
+
+pypdf==6.10.0

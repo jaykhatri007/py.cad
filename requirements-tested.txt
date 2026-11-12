@@ -1,0 +1,5 @@
+# Versions used by this audit on Linux / Python 3.12.14
+PyQt6==6.11.0
+ezDxf==1.4.4
+# Optional 3D
+cadquery==2.7.0

@@ -1,0 +1,40 @@
+PY.cad 16.7.0 — Linux quick start
+
+NATIVE SETUP (desktop glibc Linux, Intel/AMD x64)
+Open installer/packages/PY.cad-Setup-16.7.0-Linux-x64.run after making it
+executable in file properties, or run it with bash. It prepares a private
+managed Python environment and downloads the required dependencies. Internet
+is needed initially; system packages can require OS authorization.
+
+SOURCE FOLDER ON UBUNTU
+1. Extract the complete PY.cad-v16.7-Full.zip. Keep the entire PY.cad folder
+   together. Do not run from inside the ZIP.
+2. Open a terminal in that folder and run as your normal user:
+       bash setup_ubuntu.sh
+3. Start PY.cad from Applications, or run:
+       bash start.sh
+
+The source launcher creates/reuses .venv-linux; the native setup has a separate
+managed installation root. Neither route changes your drawing filenames.
+For optional CadQuery solids in source-folder mode, Python 3.12 is recommended:
+       bash start.sh --setup-only --with-3d
+
+Check the local window, native drawing, PDF and model orbit:
+       bash start.sh --check
+Display troubleshooting:
+       bash start.sh --xcb
+       bash start.sh --xcb --software-rendering
+       bash start.sh --diagnose
+
+Native drawings/templates keep .pycad/.pycadt. Schemas 1–12 can be opened;
+new saves use schema 12. Keep backups for older builds. Existing PyCAD settings
+and ~/.pycad data/log paths remain compatible. The title bar shows PY.cad 16.7.0.
+
+Copy actual drawings and linked reference folders between computers, not Python
+environments. XREF > Relink selected repairs moved DXF links. Relative paths and
+filename case matter on Linux. ETRANSMIT packages direct DXF references.
+DWG needs a separately installed/licensed ODA File Converter.
+
+See VALIDATION_16_7.txt for current checks and limits. Qt offscreen checks do not
+certify physical GPU, Wayland, printer, every Linux distribution or ARM support.
+See README.md and legal/RELEASE_READINESS.md before a public release.

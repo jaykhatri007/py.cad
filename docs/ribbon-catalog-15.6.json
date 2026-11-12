@@ -1,0 +1,1179 @@
+{
+  "version": "15.6.0",
+  "counts": {
+    "available": 69,
+    "limited": 58,
+    "planned": 25
+  },
+  "panels": [
+    {
+      "tab": "Home",
+      "panel": "Draw",
+      "spreadsheet_row": 2,
+      "tools": [
+        {
+          "label": "Line",
+          "command": "LINE",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Polyline",
+          "command": "PLINE",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Circle",
+          "command": "CIRCLE",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Arc",
+          "command": "ARC",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Rectangle",
+          "command": "RECTANGLE",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Hatch",
+          "command": "HATCH",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Spline",
+          "command": "SPLINE",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Point",
+          "command": "POINT",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Ellipse",
+          "command": "ELLIPSE",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Ray",
+          "command": "RAY",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Construction line",
+          "command": "XLINE",
+          "status": "available",
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "tab": "Home",
+      "panel": "Modify",
+      "spreadsheet_row": 3,
+      "tools": [
+        {
+          "label": "Move",
+          "command": "MOVE",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Copy",
+          "command": "COPY",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Stretch",
+          "command": "STRETCH",
+          "status": "limited",
+          "detail": "Crossing-box stretch of LINE and polyline/spline vertices; fully enclosed supported objects move. No solid stretching."
+        },
+        {
+          "label": "Rotate",
+          "command": "ROTATE",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Trim",
+          "command": "TRIM",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Fillet",
+          "command": "FILLET",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Erase",
+          "command": "ERASE",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Offset",
+          "command": "OFFSET",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Mirror",
+          "command": "MIRROR",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Scale",
+          "command": "SCALE",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Extend",
+          "command": "EXTEND",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Chamfer",
+          "command": "CHAMFER",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Rectangular array",
+          "command": "ARRAYRECT",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Polar array",
+          "command": "ARRAYPOLAR",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Select",
+          "command": "SELECT",
+          "status": "available",
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "tab": "Home",
+      "panel": "Layers",
+      "spreadsheet_row": 4,
+      "tools": [
+        {
+          "label": "Layer Properties",
+          "command": "LAYER",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Layer Isolate",
+          "command": "LAYISO",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Layer Turn Off",
+          "command": "LAYOFF",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Match Layer",
+          "command": "LAYMCH",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "All layers on",
+          "command": "LAYON",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Undo isolation",
+          "command": "LAYUNISO",
+          "status": "available",
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "tab": "Home",
+      "panel": "Annotation",
+      "spreadsheet_row": 5,
+      "tools": [
+        {
+          "label": "Text",
+          "command": "TEXT",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Multiline Text",
+          "command": "MTEXT",
+          "status": "limited",
+          "detail": "Plain multiline text; rich text formatting is not supported. DXF export emits MTEXT."
+        },
+        {
+          "label": "Dimension",
+          "command": "DIMALIGNED",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Leader",
+          "command": "LEADER",
+          "status": "limited",
+          "detail": "Creates a static arrow, line and text block. No associative multileader style system."
+        },
+        {
+          "label": "Table",
+          "command": "TABLE",
+          "status": "limited",
+          "detail": "Creates a block of lines and text. No formulas, linked cells or native CAD TABLE semantics."
+        },
+        {
+          "label": "Dimension styles",
+          "command": "DIMSTYLE",
+          "status": "available",
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "tab": "Home",
+      "panel": "Blocks",
+      "spreadsheet_row": 6,
+      "tools": [
+        {
+          "label": "Create Block",
+          "command": "BLOCK",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Insert",
+          "command": "INSERT",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Block Editor",
+          "command": "BEDIT",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Attribute Definition",
+          "command": "ATTDEF",
+          "status": "planned",
+          "detail": "Block attributes need entity, editor and interchange support."
+        },
+        {
+          "label": "Clip reference",
+          "command": "XCLIP",
+          "status": "available",
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "tab": "Home",
+      "panel": "Properties",
+      "spreadsheet_row": 7,
+      "tools": [
+        {
+          "label": "Color",
+          "command": "COLOR",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Linetype",
+          "command": "LINETYPE",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Lineweight",
+          "command": "LWEIGHT",
+          "status": "limited",
+          "detail": "Edits the selected objects' layer lineweight; all entities on those layers are affected."
+        },
+        {
+          "label": "Transparency",
+          "command": "TRANSPARENCY",
+          "status": "limited",
+          "detail": "Object transparency (0–90 percent), preserved by cloning and native files; displayed in 2D/PDF and exported to DXF. Does not control saved 3D solid materials."
+        },
+        {
+          "label": "Properties",
+          "command": "PROPERTIES",
+          "status": "available",
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "tab": "Home",
+      "panel": "Utilities",
+      "spreadsheet_row": 8,
+      "tools": [
+        {
+          "label": "Measure",
+          "command": "MEASUREGEOM",
+          "status": "limited",
+          "detail": "Opens the measurement tool palette; MEASURE point placement is not implemented."
+        },
+        {
+          "label": "Distance",
+          "command": "DIST",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Radius",
+          "command": "MEASURERADIUS",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Angle",
+          "command": "MEASUREANGLE",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Area",
+          "command": "AREA",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Quick Measure",
+          "command": "QUICKMEASURE",
+          "status": "limited",
+          "detail": "Click an entity to report its measurements; no live hover overlay."
+        },
+        {
+          "label": "Drawing units",
+          "command": "UNITS",
+          "status": "limited",
+          "detail": "Per-file display settings, with explicit physical unit conversion for model geometry, blocks, constraints, underlays, solids and viewport transforms. Unitless conversion requires assigning a source unit first."
+        }
+      ]
+    },
+    {
+      "tab": "Insert",
+      "panel": "Block",
+      "spreadsheet_row": 9,
+      "tools": [
+        {
+          "label": "Create Block",
+          "command": "BLOCK",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Write Block",
+          "command": "WBLOCK",
+          "status": "limited",
+          "detail": "Writes selected model-space entities and their block/layer/style dependencies to a native project or 2D DXF."
+        },
+        {
+          "label": "Insert",
+          "command": "INSERT",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Block Editor",
+          "command": "BEDIT",
+          "status": "available",
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "tab": "Insert",
+      "panel": "Reference",
+      "spreadsheet_row": 10,
+      "tools": [
+        {
+          "label": "Attach DWG",
+          "command": "ATTACHDWG",
+          "status": "planned",
+          "detail": "DWG opening is available through an optional ODA converter. Linked DWG references are not implemented."
+        },
+        {
+          "label": "Attach PDF",
+          "command": "PDFATTACH",
+          "status": "limited",
+          "detail": "Embeds one PDF page as a raster underlay (up to 150 dpi / 4096 pixels). Placement, opacity, locking, calibration and PDF plots; no vector import or PDF snapping."
+        },
+        {
+          "label": "Attach DGN",
+          "command": "DGNATTACH",
+          "status": "planned",
+          "detail": "This format is not supported by the current importer. Use DXF for supported 2D geometry."
+        },
+        {
+          "label": "Attach Image",
+          "command": "IMAGEATTACH",
+          "status": "limited",
+          "detail": "Embedded raster underlay with placement, rotation, opacity, locking, scale calibration and PDF plotting. No raster-to-vector conversion."
+        },
+        {
+          "label": "Underlays",
+          "command": "UNDERLAYS",
+          "status": "limited",
+          "detail": "Manage embedded image/PDF references and start two-point scale calibration."
+        },
+        {
+          "label": "Attach Point Cloud",
+          "command": "POINTCLOUDATTACH",
+          "status": "planned",
+          "detail": "Requires a point-cloud importer and spatial rendering engine."
+        },
+        {
+          "label": "External References",
+          "command": "XREF",
+          "status": "limited",
+          "detail": "Lists cached DXF references and reloads them. Nested-reference dependency packaging is not implemented."
+        },
+        {
+          "label": "Attach DXF",
+          "command": "DXFATTACH",
+          "status": "limited",
+          "detail": "2D DXF references only; inspect import warnings before use."
+        }
+      ]
+    },
+    {
+      "tab": "Insert",
+      "panel": "Import",
+      "spreadsheet_row": 11,
+      "tools": [
+        {
+          "label": "PDF Import",
+          "command": "PDFIMPORT",
+          "status": "planned",
+          "detail": "This format is not supported by the current importer. Use DXF for supported 2D geometry."
+        },
+        {
+          "label": "DGN Import",
+          "command": "DGNIMPORT",
+          "status": "planned",
+          "detail": "This format is not supported by the current importer. Use DXF for supported 2D geometry."
+        },
+        {
+          "label": "Markup Import",
+          "command": "MARKUPIMPORT",
+          "status": "planned",
+          "detail": "Markup recognition and association are not implemented."
+        }
+      ]
+    },
+    {
+      "tab": "Insert",
+      "panel": "Data",
+      "spreadsheet_row": 12,
+      "tools": [
+        {
+          "label": "Data Extraction",
+          "command": "DATAEXTRACTION",
+          "status": "limited",
+          "detail": "Exports a static CSV of selected or visible model entities and their measured properties."
+        },
+        {
+          "label": "Extract Data table",
+          "command": "DATATABLE",
+          "status": "limited",
+          "detail": "Creates a block of lines and text. No formulas, linked cells or native CAD TABLE semantics."
+        },
+        {
+          "label": "Hyperlink",
+          "command": "HYPERLINK",
+          "status": "limited",
+          "detail": "Edit/remove HTTP(S) entity links and explicitly open them. Native and supported DXF entities preserve links; file paths and executable URL schemes are excluded."
+        }
+      ]
+    },
+    {
+      "tab": "Annotate",
+      "panel": "Text",
+      "spreadsheet_row": 13,
+      "tools": [
+        {
+          "label": "Single Line Text",
+          "command": "TEXT",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Multiline Text",
+          "command": "MTEXT",
+          "status": "limited",
+          "detail": "Plain multiline text; no inline rich formatting."
+        },
+        {
+          "label": "Spell Check",
+          "command": "SPELL",
+          "status": "planned",
+          "detail": "Requires a dictionary-backed spelling engine."
+        }
+      ]
+    },
+    {
+      "tab": "Annotate",
+      "panel": "Dimensions",
+      "spreadsheet_row": 14,
+      "tools": [
+        {
+          "label": "Linear",
+          "command": "DIMHORIZONTAL",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Aligned",
+          "command": "DIMALIGNED",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Angular",
+          "command": "DIMANGULAR",
+          "status": "limited",
+          "detail": "Three-point counterclockwise angle or associative circular-arc angle. Native editing/placement grip; exported as graphics in DXF. Two-line selection is not implemented."
+        },
+        {
+          "label": "Arc Length",
+          "command": "DIMARC",
+          "status": "limited",
+          "detail": "Associative circular ARC length annotation with placement grip and shared dimension styles. No polyline/spline arc-length annotations; DXF exports graphics."
+        },
+        {
+          "label": "Radius",
+          "command": "DIMRADIUS",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Continue",
+          "command": "DIMCONTINUE",
+          "status": "limited",
+          "detail": "Select a linear dimension, then specify extension points. New dimensions are independent."
+        },
+        {
+          "label": "Baseline",
+          "command": "DIMBASELINE",
+          "status": "limited",
+          "detail": "Select a linear dimension, then specify extension points. New dimensions are independent."
+        },
+        {
+          "label": "Vertical",
+          "command": "DIMVERTICAL",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Diameter",
+          "command": "DIMDIAMETER",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Dimension styles",
+          "command": "DIMSTYLE",
+          "status": "available",
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "tab": "Annotate",
+      "panel": "Centerlines",
+      "spreadsheet_row": 15,
+      "tools": [
+        {
+          "label": "Centerline",
+          "command": "CENTERLINE",
+          "status": "limited",
+          "detail": "Creates ordinary editable geometry; not associative with the source. Pick two parallel lines."
+        },
+        {
+          "label": "Center Mark",
+          "command": "CENTERMARK",
+          "status": "limited",
+          "detail": "Creates ordinary editable geometry; not associative with the source. Pick a circle or arc."
+        }
+      ]
+    },
+    {
+      "tab": "Annotate",
+      "panel": "Leaders",
+      "spreadsheet_row": 16,
+      "tools": [
+        {
+          "label": "Multileader",
+          "command": "MLEADER",
+          "status": "limited",
+          "detail": "Creates a static arrow, line and text block. No associative multileader style system. One leader branch."
+        },
+        {
+          "label": "Add Leader",
+          "command": "MLEADERADD",
+          "status": "planned",
+          "detail": "Persistent multileader branch editing is not implemented."
+        },
+        {
+          "label": "Remove Leader",
+          "command": "MLEADERREMOVE",
+          "status": "planned",
+          "detail": "Persistent multileader branch editing is not implemented."
+        }
+      ]
+    },
+    {
+      "tab": "Annotate",
+      "panel": "Tables",
+      "spreadsheet_row": 17,
+      "tools": [
+        {
+          "label": "Table",
+          "command": "TABLE",
+          "status": "limited",
+          "detail": "Creates a block of lines and text. No formulas, linked cells or native CAD TABLE semantics."
+        },
+        {
+          "label": "Table Style",
+          "command": "TABLESTYLE",
+          "status": "limited",
+          "detail": "Sets cell size and text height for newly created static table blocks; not a named CAD style table."
+        }
+      ]
+    },
+    {
+      "tab": "Parametric",
+      "panel": "Geometric",
+      "spreadsheet_row": 18,
+      "tools": [
+        {
+          "label": "Coincident",
+          "command": "GCCOINCIDENT",
+          "status": "limited",
+          "detail": "Persistent coincidence of LINE endpoints, POINTs or CIRCLE/ARC centers. Native .pycad persistence; bounded 2D solver, no polyline segments, blocks, solids or expression parameters."
+        },
+        {
+          "label": "Collinear",
+          "command": "GCCOLLINEAR",
+          "status": "limited",
+          "detail": "Persistent collinearity between two LINE entities. Native .pycad persistence; bounded 2D solver, no polyline segments, blocks, solids or expression parameters."
+        },
+        {
+          "label": "Concentric",
+          "command": "GCCONCENTRIC",
+          "status": "limited",
+          "detail": "Persistent common center for CIRCLE/ARC entities. Native .pycad persistence; bounded 2D solver, no polyline segments, blocks, solids or expression parameters."
+        },
+        {
+          "label": "Fixed",
+          "command": "GCFIX",
+          "status": "limited",
+          "detail": "Locks the complete position/shape of a LINE, POINT, CIRCLE or ARC. Native .pycad persistence; bounded 2D solver, no polyline segments, blocks, solids or expression parameters."
+        },
+        {
+          "label": "Parallel",
+          "command": "GCPARALLEL",
+          "status": "limited",
+          "detail": "Maintains parallel LINE directions after committed edits. Native .pycad persistence; bounded 2D solver, no polyline segments, blocks, solids or expression parameters."
+        },
+        {
+          "label": "Perpendicular",
+          "command": "GCPERPENDICULAR",
+          "status": "limited",
+          "detail": "Maintains perpendicular LINE directions after committed edits. Native .pycad persistence; bounded 2D solver, no polyline segments, blocks, solids or expression parameters."
+        }
+      ]
+    },
+    {
+      "tab": "Parametric",
+      "panel": "Dimensional",
+      "spreadsheet_row": 19,
+      "tools": [
+        {
+          "label": "Linear",
+          "command": "DCLINEAR",
+          "status": "limited",
+          "detail": "Driving X or Y distance between LINE endpoints, POINTs or CIRCLE/ARC centers. Enter X/Y to choose the component. Native .pycad persistence; bounded 2D solver, no polyline segments, blocks, solids or expression parameters."
+        },
+        {
+          "label": "Aligned",
+          "command": "DCALIGNED",
+          "status": "limited",
+          "detail": "Driving distance between supported endpoints/centers. Native .pycad persistence; bounded 2D solver, no polyline segments, blocks, solids or expression parameters."
+        },
+        {
+          "label": "Angular",
+          "command": "DCANGULAR",
+          "status": "limited",
+          "detail": "Driving angle between LINE entities, greater than 0 and less than 180 degrees. Native .pycad persistence; bounded 2D solver, no polyline segments, blocks, solids or expression parameters."
+        },
+        {
+          "label": "Radius",
+          "command": "DCRADIUS",
+          "status": "limited",
+          "detail": "Driving CIRCLE/ARC radius. Native .pycad persistence; bounded 2D solver, no polyline segments, blocks, solids or expression parameters."
+        },
+        {
+          "label": "Diameter",
+          "command": "DCDIAMETER",
+          "status": "limited",
+          "detail": "Driving CIRCLE/ARC diameter. Native .pycad persistence; bounded 2D solver, no polyline segments, blocks, solids or expression parameters."
+        }
+      ]
+    },
+    {
+      "tab": "Parametric",
+      "panel": "Manage",
+      "spreadsheet_row": 20,
+      "tools": [
+        {
+          "label": "Show/Hide All",
+          "command": "CONSTRAINTBAR",
+          "status": "limited",
+          "detail": "Shows/hides persistent constraint labels in drafting; labels are not printed. Native .pycad persistence; bounded 2D solver, no polyline segments, blocks, solids or expression parameters."
+        },
+        {
+          "label": "Delete Constraints",
+          "command": "DELCONSTRAINT",
+          "status": "limited",
+          "detail": "Removes constraints involving selected objects, or asks before removing all. Undo restores them. Native .pycad persistence; bounded 2D solver, no polyline segments, blocks, solids or expression parameters."
+        },
+        {
+          "label": "Settings",
+          "command": "CONSTRAINTSETTINGS",
+          "status": "limited",
+          "detail": "Constraint manager: edit driving values, delete relations, view remaining degrees of freedom, and configure tolerance/labels. Native .pycad persistence; bounded 2D solver, no polyline segments, blocks, solids or expression parameters."
+        }
+      ]
+    },
+    {
+      "tab": "View",
+      "panel": "Navigation",
+      "spreadsheet_row": 21,
+      "tools": [
+        {
+          "label": "Pan",
+          "command": "PAN",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Zoom Extents",
+          "command": "ZOOMEXTENTS",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Zoom Window",
+          "command": "ZOOMWINDOW",
+          "status": "limited",
+          "detail": "Two-corner window in the 2D drafting viewport."
+        },
+        {
+          "label": "Zoom Realtime",
+          "command": "ZOOMREALTIME",
+          "status": "limited",
+          "detail": "Drag vertically in the 2D viewport; 3D also supports wheel zoom."
+        },
+        {
+          "label": "Orbit",
+          "command": "3DORBIT",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "SteeringWheel",
+          "command": "NAVWHEEL",
+          "status": "limited",
+          "detail": "PyCAD's compact in-viewport navigation rail and view selector; not Autodesk's SteeringWheel."
+        },
+        {
+          "label": "Four views",
+          "command": "VPORTS",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Top",
+          "command": "TOP",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Front",
+          "command": "FRONT",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Left",
+          "command": "LEFT",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Right",
+          "command": "RIGHT",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Bottom",
+          "command": "BOTTOM",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Back",
+          "command": "BACK",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Isometric",
+          "command": "ISOMETRIC",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "2D drafting",
+          "command": "PLAN",
+          "status": "available",
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "tab": "View",
+      "panel": "Views",
+      "spreadsheet_row": 22,
+      "tools": [
+        {
+          "label": "Base View",
+          "command": "VIEWBASE",
+          "status": "planned",
+          "detail": "Generated associative drawing views from solids are not implemented."
+        },
+        {
+          "label": "Projected View",
+          "command": "VIEWPROJ",
+          "status": "planned",
+          "detail": "Generated drawing views are not the same as the existing model camera presets."
+        },
+        {
+          "label": "Section",
+          "command": "VIEWSECTION",
+          "status": "planned",
+          "detail": "Requires solid sectioning and drawing-view generation."
+        },
+        {
+          "label": "Detail",
+          "command": "VIEWDETAIL",
+          "status": "planned",
+          "detail": "Requires associative drawing-view generation."
+        },
+        {
+          "label": "Paper viewport",
+          "command": "ADDVIEWPORT",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "New layout",
+          "command": "NEWLAYOUT",
+          "status": "available",
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "tab": "View",
+      "panel": "Visual Styles",
+      "spreadsheet_row": 23,
+      "tools": [
+        {
+          "label": "2D Wireframe",
+          "command": "2DWIREFRAME",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Conceptual",
+          "command": "CONCEPTUAL",
+          "status": "planned",
+          "detail": "A conceptual material/edge renderer is not implemented."
+        },
+        {
+          "label": "Realistic",
+          "command": "REALISTIC",
+          "status": "planned",
+          "detail": "Material, texture, lighting and shadow rendering are not implemented."
+        },
+        {
+          "label": "Shaded",
+          "command": "SHADED",
+          "status": "limited",
+          "detail": "Software shaded faces with edges; no material lighting."
+        },
+        {
+          "label": "X-Ray",
+          "command": "XRAY",
+          "status": "limited",
+          "detail": "Transparent faces and edges in the embedded model viewport."
+        },
+        {
+          "label": "Extrude",
+          "command": "EXTRUDE",
+          "status": "available",
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "tab": "View",
+      "panel": "Palettes",
+      "spreadsheet_row": 24,
+      "tools": [
+        {
+          "label": "Properties",
+          "command": "PROPERTIES",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Tool Palettes",
+          "command": "TOOLPALETTES",
+          "status": "limited",
+          "detail": "Searchable command/capability palette; no drag-and-drop reusable block library."
+        },
+        {
+          "label": "Sheet Set Manager",
+          "command": "SHEETSET",
+          "status": "planned",
+          "detail": "Sheet-set databases, publishing and drawing links are not implemented."
+        },
+        {
+          "label": "Command Line",
+          "command": "COMMANDLINE",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Live measurements",
+          "command": "DYNMODE",
+          "status": "limited",
+          "detail": "F12 toggles cursor readouts and editable length/angle or width/height fields for supported 2D point tools. Tab switches fields; Enter or Space accepts. Grip readouts remain read-only."
+        }
+      ]
+    },
+    {
+      "tab": "Manage",
+      "panel": "CAD Standards",
+      "spreadsheet_row": 25,
+      "tools": [
+        {
+          "label": "Check",
+          "command": "CHECKSTANDARDS",
+          "status": "limited",
+          "detail": "Check drawing units and layer names/colors/linetypes/lineweights against a configured native JSON profile. No Autodesk DWS support or automatic repair."
+        },
+        {
+          "label": "Configure",
+          "command": "CONFIGURESTANDARDS",
+          "status": "limited",
+          "detail": "Capture/load/save a native PyCAD standards profile; the active profile persists in .pycad. DWS files are not supported."
+        },
+        {
+          "label": "Standards",
+          "command": "STANDARDS",
+          "status": "limited",
+          "detail": "Manage a persistent PyCAD JSON standards profile and run a drawing check. Not an Autodesk DWS engine."
+        },
+        {
+          "label": "Layer Translator",
+          "command": "LAYTRANS",
+          "status": "limited",
+          "detail": "Merge a source layer into an existing target, including block geometry and saved extrusion layer references. Undo restores both tables and objects. No saved mapping-file library."
+        }
+      ]
+    },
+    {
+      "tab": "Manage",
+      "panel": "Customization",
+      "spreadsheet_row": 26,
+      "tools": [
+        {
+          "label": "User Interface (CUI)",
+          "command": "CUI",
+          "status": "planned",
+          "detail": "A full CUI editor is not implemented. Use the Compact ribbon toggle and Edit Aliases."
+        },
+        {
+          "label": "Action Recorder",
+          "command": "ACTRECORD",
+          "status": "planned",
+          "detail": "Replayable command/coordinate recording is not implemented."
+        },
+        {
+          "label": "Edit Aliases",
+          "command": "ALIASEDIT",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "Tool coverage",
+          "command": "TOOLCOVERAGE",
+          "status": "available",
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "tab": "Manage",
+      "panel": "Applications",
+      "spreadsheet_row": 27,
+      "tools": [
+        {
+          "label": "Load Application (AutoLISP/VBA)",
+          "command": "APPLOAD",
+          "status": "planned",
+          "detail": "AutoLISP and VBA runtimes are not implemented. Python console remains available from the menu."
+        },
+        {
+          "label": "Visual Basic Editor",
+          "command": "VBAIDE",
+          "status": "planned",
+          "detail": "No VBA runtime or editor is included."
+        },
+        {
+          "label": "Action Macro",
+          "command": "ACTMACRO",
+          "status": "planned",
+          "detail": "Command macro recording/replay is not implemented."
+        }
+      ]
+    },
+    {
+      "tab": "Output",
+      "panel": "Plot",
+      "spreadsheet_row": 28,
+      "tools": [
+        {
+          "label": "Plot",
+          "command": "PLOT",
+          "status": "limited",
+          "detail": "Vector PDF plotting with model scale or paper layouts. Direct physical-printer selection is not implemented."
+        },
+        {
+          "label": "Batch Plot",
+          "command": "BATCHPLOT",
+          "status": "limited",
+          "detail": "Exports one PDF per paper layout into a ZIP (or Model when no layouts exist)."
+        },
+        {
+          "label": "Plot Preview",
+          "command": "PLOTPREVIEW",
+          "status": "limited",
+          "detail": "Preview of the current space using the same PDF renderer as export."
+        },
+        {
+          "label": "Page Setup",
+          "command": "PAGESETUP",
+          "status": "limited",
+          "detail": "Changes the current paper layout's width/height in millimetres; Model uses A4 landscape."
+        }
+      ]
+    },
+    {
+      "tab": "Output",
+      "panel": "Export",
+      "spreadsheet_row": 29,
+      "tools": [
+        {
+          "label": "Export to PDF",
+          "command": "EXPORTPDF",
+          "status": "available",
+          "detail": ""
+        },
+        {
+          "label": "DWF",
+          "command": "EXPORTDWF",
+          "status": "planned",
+          "detail": "A DWF exporter is not implemented."
+        },
+        {
+          "label": "DXF",
+          "command": "EXPORTDXF",
+          "status": "limited",
+          "detail": "Supported 2D entities only; dimensions export as lines/text. 3D extrusion export is rejected."
+        },
+        {
+          "label": "STL",
+          "command": "EXPORTSTL",
+          "status": "limited",
+          "detail": "Exports one selected closed 2D profile with a prompted extrusion height; requires optional CadQuery."
+        },
+        {
+          "label": "FBX",
+          "command": "EXPORTFBX",
+          "status": "planned",
+          "detail": "An FBX scene exporter is not implemented."
+        }
+      ]
+    },
+    {
+      "tab": "Output",
+      "panel": "Send",
+      "spreadsheet_row": 30,
+      "tools": [
+        {
+          "label": "Email",
+          "command": "EMAIL",
+          "status": "planned",
+          "detail": "Email account integration is not implemented. Save an eTransmit package and attach it manually."
+        },
+        {
+          "label": "Transmittal (eTransmit)",
+          "command": "ETRANSMIT",
+          "status": "limited",
+          "detail": "Creates a local ZIP of the native drawing and direct DXF reference files with a manifest; missing references abort packaging."
+        }
+      ]
+    }
+  ]
+}

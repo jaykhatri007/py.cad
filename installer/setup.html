@@ -1,0 +1,77 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PY.cad · Studio Setup</title>
+<style>
+:root{color-scheme:dark;--ink:#eff7ff;--muted:#adbed1;--teal:#0bd7d9;--edge:#30455c}
+*{box-sizing:border-box}body{margin:0;background:#091321;color:var(--ink);font:15px/1.45 system-ui,sans-serif}
+main{max-width:800px;margin:24px auto;background:#142235;border:1px solid var(--edge);border-radius:14px;overflow:hidden}
+header img{display:block;width:100%;height:auto;background:#0b1929}.content{padding:20px 24px}
+h1,h2,p{margin:0 0 10px}h1{font-size:24px}h2{font-size:13px;color:var(--teal);letter-spacing:.11em;text-transform:uppercase}
+small,p{color:var(--muted)}ol{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:4px 12px;margin:12px 0;padding:0}
+li{color:var(--muted)}li.current,li.done{color:var(--teal)}progress{display:block;width:100%;height:10px;accent-color:var(--teal);margin:8px 0 12px}
+#files{margin:0;min-height:36px;max-height:108px;overflow:auto;white-space:pre-wrap;font:13px/1.4 system-ui,sans-serif}
+#activity{font-size:13px;white-space:pre-wrap;margin-top:8px}#error{color:#ffb9b1;white-space:pre-wrap}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}button,a{font:inherit;color:var(--ink);background:#233a51;border:1px solid #4a647e;padding:7px 13px;border-radius:6px;text-decoration:none;cursor:pointer}
+button:focus-visible,a:focus-visible{outline:2px solid var(--teal);outline-offset:2px}button:disabled{opacity:.55;cursor:default}
+@media(max-width:800px){main{margin:0;border-radius:0}}@media(max-width:470px){ol{grid-template-columns:1fr 1fr}.content{padding:16px}}
+</style>
+<main><header><img id="banner" alt="PY.cad Studio Setup · architectural wireframe"></header>
+<div class="content">
+<small id="identity">PY.cad Studio Setup</small><h1 id="title" aria-live="polite">Preparing setup…</h1>
+<p id="root"></p>
+<progress id="install" max="6" value="0" aria-label="Installation stages"></progress>
+<ol id="steps" aria-label="Installation steps"></ol>
+<h2>Downloads</h2><p id="transfer">Waiting for setup…</p>
+<progress id="download" max="1" value="0" aria-label="Download progress"></progress>
+<pre id="files" tabindex="0" aria-label="Reported package downloads"></pre>
+<p id="activity"></p><p id="error" role="alert"></p>
+<div class="actions"><a id="legal" target="_blank" rel="noopener">Licenses</a><a id="log">Open log</a><button id="retry" hidden>Retry</button><button id="close">Cancel setup</button></div>
+</div></main>
+<script>
+const $=id=>document.getElementById(id), key=new URLSearchParams(location.search).get('key')||'';
+const endpoint=p=>p+'?key='+encodeURIComponent(key), stages=['System check','Workspace','Python runtime','CAD packages','Startup checks','Finish'];
+let stopping=false, terminal=false;
+const still=endpoint('/studio-banner.png'), animated=endpoint('/studio-animation.gif');
+$('banner').src=matchMedia('(prefers-reduced-motion: reduce)').matches?still:animated;
+$('banner').onload=()=>{if($('banner').src.endsWith(animated))setTimeout(()=>{$('banner').src=still},1660)};
+$('legal').href=endpoint('/legal');$('log').href=endpoint('/log');
+async function action(route){
+ const response=await fetch(endpoint(route),{method:'POST'});
+ if(!response.ok)throw Error('Setup could not accept the request.');
+}
+$('retry').onclick=async()=>{try{await action('/retry');terminal=false;$('retry').hidden=true}catch(e){$('error').textContent=e.message}};
+$('close').onclick=async()=>{
+ if(!terminal&&!confirm('Stop the current installation?'))return;
+ try{await action('/close');stopping=true;$('close').disabled=true;$('title').textContent=terminal?'Setup closed. You may close this tab.':'Stopping setup…'}catch(e){$('error').textContent=e.message}
+};
+function render(s){
+ terminal=s.done||!!s.error;
+ $('identity').textContent='PY.cad '+s.version+' · '+s.platform;
+ $('root').textContent=s.root;
+ $('title').textContent=s.title;
+ const step=s.done?6:Math.max(0,Math.min(5,s.step));
+ $('install').value=step;
+ const nodes=stages.map((name,i)=>{const e=document.createElement('li');e.className=i<step?'done':i===step?'current':'';if(i===step)e.setAttribute('aria-current','step');e.textContent=(i<step?'✓ ':i===step?'● ':'○ ')+name;return e});
+ $('steps').replaceChildren(...nodes);
+ const d=s.transfer||{}, fmt=n=>(n/1048576).toFixed(2)+' MiB';
+ const busy=!terminal&&(d.active||step===2||step===3);
+ $('transfer').textContent=d.active?d.name+(d.total>0?' · '+fmt(d.bytes)+' / '+fmt(d.total):d.bytes>0?' · '+fmt(d.bytes)+' received':' · working'):s.done?'Downloads complete':s.error?'Download activity stopped':busy?'Package download activity · byte totals unavailable':'Reported downloads';
+ if(d.active&&d.total>0)$('download').value=Math.min(1,d.bytes/d.total);
+ else if(busy)$('download').removeAttribute('value');
+ else $('download').value=s.done?1:0;
+ const files=(s.packages||[]).map(p=>(p.done?'✓ ':'↓ ')+p.name+(p.size?' ('+p.size+')':''));
+ const output=(s.output||'').replace(/\x1b\[[0-?]*[ -/]*[@-~]/g,'').trim().split(/[\r\n]+/).slice(-2).join('\n');
+ $('files').textContent=[...files,...(busy&&output?[output]:[])].join('\n');
+ $('activity').textContent=(s.notes||[]).slice(-1).join('');
+ $('error').textContent=s.error||'';
+ $('retry').hidden=!s.error;
+ $('close').textContent=terminal?'Close setup':'Cancel setup';
+}
+async function tick(){
+ if(stopping)return;
+ try{const r=await fetch(endpoint('/status'),{cache:'no-store'});if(!r.ok)throw Error();render(await r.json())}
+ catch(_){if(!stopping&&!terminal)$('activity').textContent='Waiting for a response from the local setup engine…'}
+ finally{if(!stopping)setTimeout(tick,500)}
+}
+tick();
+</script>
+</html>
